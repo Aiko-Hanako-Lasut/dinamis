@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU TOMBOL</title>
+    <link rel="stylesheet" href="umum.css">
+    <style>
+        body {
+            background-color: #FEEFAD;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1.menu {
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            color: #27B1BE;
+            border: none;
+            background: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+            position: relative;
+        }
+
+        .btn a {
+            color: #27B1BE; /* Warna teks utama */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #27B1BE; /* Warna latar belakang saat hover */
+            color: #FFF; /* Warna teks saat hover */
+        }
+
+        .btn:hover a {
+            color: #FFF; /* Warna teks link saat hover */
+        }
+
+        .btn:active {
+            background-color: #27B1BE; /* Warna latar belakang saat aktif */
+            transform: scale(0.95);
+        }
+
+        .btn:before {
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            color: rgba(0, 0, 0, 0.2);
+            pointer-events: none;
+            transition: color 0.3s;
+        }
+
+        .btn:hover:before {
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        .btn:active:before {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        /* Aturan khusus untuk tombol */
+        .custom1, .custom2, .custom3 {
+            color: #27B1BE;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="menu">MENU</h1>
+    <div class="sidebar">
+        <div class="btn custom1"><a href="../simple_article/INFOCENTER/informationeditor.php" target="tampilan_utama">YOUR ACTIVITIES</a></div>
+        <div class="btn custom2"><a href="../simple_article/pengumuman-kegiatan/index.php" target="tampilan_utama">MANAJEMEN KEGIATAN</a></div>
+        <div class="btn custom3"><a href="../simple_article/editor-artikel/artikeleditor.php" target="tampilan_utama">UPLOAD ARTIKEL/DOKUMENTASI</a></div>
+    </div>
+</body>
+</html>

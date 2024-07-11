@@ -1,0 +1,116 @@
+/* Aturan untuk body dengan ID body_text */
+#body_text {
+    background-color: #27B1BE;
+}
+.menu {
+    text-align: left;
+}
+/* Aturan untuk heading dalam elemen dengan kelas text */
+.text h1 {
+    text-align: right;
+    font-family: 'Castellar', sans-serif; /* Pastikan font tersedia atau gunakan fallback */
+    color: white;
+    margin-right: 20px;
+}
+
+/* Aturan untuk kelas custom1 */
+.custom1 {
+    background-color: #27B1BE; /* Pastikan variabel CSS accentColor didefinisikan */
+    text-align: center;
+    color: rgb(183, 240, 104);
+    min-width: 150px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.custom1:hover {
+    box-shadow: 0 0 5px rgba(89, 230, 246, 0.8);
+}
+
+/* Aturan untuk body */
+body {
+    background-color: #FEEFAD;
+    font-family: Arial, sans-serif;
+}
+
+/* Aturan untuk heading h1 */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Aturan untuk tombol umum */
+body {
+    background-color:#FEEFAD;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1.menu {
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: transparent;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.btn a {
+    color: #27B1BE; /* Warna teks utama */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.btn:hover {
+    background-color: #27B1BE; /* Warna latar belakang saat hover */
+    color: #FFF; /* Warna teks saat hover */
+}
+
+.btn:hover a {
+    color: #FFF; /* Warna teks link saat hover */
+}
+
+.btn:active {
+    background-color: #27B1BE; /* Warna latar belakang saat aktif */
+    transform: scale(0.95);
+}
+
+.btn:before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    transition: color 0.3s;
+}
+
+.btn:hover:before {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.btn:active:before {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Aturan khusus untuk tombol */
+.custom1, .custom2, .custom3, .custom4, .custom5 {
+    color: #27B1BE;
+}
+
+
+
+

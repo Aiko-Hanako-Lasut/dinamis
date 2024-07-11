@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Admin Login</title>
+    <link rel="stylesheet" href="page-login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>UNKLAB ORGANIZATION ACTIVITIES INFORMATION SYSTEMS</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="role">ADMIN</label>
+                <select id="role" name="role">
+                    <option value="uvics">UVICS</option>
+                    <option value="choir">CHOIR TUC</option>
+                    <option value="senatbem">SENAT & BEM FILKOM</option>
+                    <option value="mapala">MAPALA</option>
+                    <option value="uls">UNKLAB LIFE STYLE</option>
+                    <option value="ikmapap">IKMAPAP</option>
+                    <option value="FEKON">HIMA & BEM FEB</option>
+                    <option value="UK">BEM UNKLAB</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <button type="button" id="togglePassword">Show</button>
+            </div>
+            <button type="submit">Log in</button>
+        </form>
+    </div>
+    <script src="page-login.js"></script>
+</body>
+</html>
